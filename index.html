@@ -12,7 +12,9 @@
           return decodeURIComponent(results[2].replace(/\+/g, ' '));
       }
       var user = getParameterByName("to");
-      document.write("Selamat Datang"+user);
+      if(user!=null){
+        document.write("Selamat Datang "+user);
+      }
     </script>
   </body>
 </html>
